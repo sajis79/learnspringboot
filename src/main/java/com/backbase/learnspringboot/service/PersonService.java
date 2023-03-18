@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface PersonService {
     Person addNewPerson(Person person); // Create
-    Person updatePerson(Person person); // Update
+    Person updatePerson(Long id , Person person) throws Exception; // Update
 
     List<Person> getAllPersons(); //Retrive
     boolean deletePerson(Long id); //Delete
